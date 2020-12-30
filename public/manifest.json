@@ -1,0 +1,15 @@
+{
+  "name": "oeil-de-lyon",
+  "short_name": "oeil-de-lyon",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/netliheart.svg",
+      "sizes": "192x192"
+    }
+  ]
+}
