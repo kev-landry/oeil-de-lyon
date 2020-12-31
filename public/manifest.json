@@ -9,7 +9,7 @@
   "icons": [
     {
       "src": "/netliheart.svg",
-      "sizes": "192x192"
+      "sizes": "any"
     }
   ]
 }
