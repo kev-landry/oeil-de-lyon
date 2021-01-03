@@ -18,11 +18,11 @@ function initFirebase() {
 }
 
 initFirebase();
-const storage = firebase.storage();
+const fireStorage = firebase.storage();
 const fireStore = firebase.firestore();
 
 // const fire = firebase;
 
-export { fireStore, storage };
+export { fireStore, fireStorage };
 
 // console.log({firebaseConfig});

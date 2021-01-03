@@ -3,10 +3,12 @@ import Head from 'next/head';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import useFirestore from 'hooks/useFirestore';
+import useStorage from 'hooks/useStorage';
 
 export default function Home() {
-  const { docs } = useFirestore("photos");
-  console.log('index -', docs);
+  // const { docs } = useFirestore("photos");
+  const { photos } = useStorage();
+  console.log('index -', photos);
   return (
     <div className="container">
       <Head>
@@ -18,12 +20,15 @@ export default function Home() {
       <main>
         <Header title="Oeil de Lyon 👋" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Random photos i made in <code>Lyon</code>
         </p>
-
-        <p>{process.env.NEXT_PUBLIC_API_KEY}</p>
       </main>
-
+      <div style={{ marginTop: 50 }}>
+        {photos && photos.map((photo) => (
+          <img src={photo} alt="" width="250" />
+        )
+        )}
+      </div>
       <Footer />
     </div>
   );
