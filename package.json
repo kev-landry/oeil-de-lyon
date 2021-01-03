@@ -10,6 +10,7 @@
     "postbuild": "next-on-netlify"
   },
   "dependencies": {
+    "firebase": "^8.2.1",
     "next": "10.0.4",
     "next-on-netlify": "^2.6.3",
     "next-pwa": "^5.0.1",
